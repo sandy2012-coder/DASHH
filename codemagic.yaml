@@ -2,7 +2,6 @@ workflows:
   android-app:
     name: Build Dashcam APK
     environment:
-      android: true
       java: 17
     scripts:
       - name: Make gradlew executable
@@ -11,3 +10,4 @@ workflows:
         script: ./gradlew assembleDebug
     artifacts:
       - app/build/outputs/**/*.apk
+
